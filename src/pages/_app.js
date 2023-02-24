@@ -1,5 +1,12 @@
-import '@/styles/globals.css'
+import Layout from "../components/Layout";
+import "../styles/Home.module.css";
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
+const App = ({ Component, pageProps }) => {
+  return (
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
+  );
+};
+
+export default App;
